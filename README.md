@@ -3,6 +3,7 @@ Unitree Go2 ROS2 workspace containing all the tools needed for conducting realwo
 
 ---
 🧩 Included Packages
+
 🔹 Bringup and System Integration
     bringup_go2 (Main Bringup Package)
     The primary entry point for the system.
@@ -13,7 +14,9 @@ Unitree Go2 ROS2 workspace containing all the tools needed for conducting realwo
     	•	Optional visualisation and debugging tools
 
 🔹 SLLIDAR Package for using the SLLIDAR S2 2D LiDAR
+
 🔹 Marvelmind driver and ROS2 radiation sensor node for radiation emulation
+
 🔹 Platform and Interface Packages
 
 ---
