@@ -2,6 +2,17 @@
 Unitree Go2 ROS2 workspace containing all the tools needed for conducting realworld testing of the radiation aware occupancy map abstraction based framework for unknown environment exploration.
 
 ---
+
+⚠️ Development Status
+	•	Workspace structure is functional but evolving
+	•	Package APIs and launch files may change
+	•	Some experimental or legacy nodes may still be present
+	•	Documentation is partial and will be expanded
+
+This repository should currently be treated as a research workspace, not a production-ready robotics stack.
+
+---
+
 🧩 Included Packages
 
 🔹 Bringup and System Integration
@@ -20,14 +31,6 @@ Unitree Go2 ROS2 workspace containing all the tools needed for conducting realwo
 🔹 Platform and Interface Packages
 
 ---
-
-⚠️ Development Status
-	•	Workspace structure is functional but evolving
-	•	Package APIs and launch files may change
-	•	Some experimental or legacy nodes may still be present
-	•	Documentation is partial and will be expanded
-
-This repository should currently be treated as a research workspace, not a production-ready robotics stack.
 
 🚀 Running the System
 
