@@ -1,0 +1,19 @@
+{
+  "config": {
+    "command": "demo",
+    "world": "partitioned",
+    "duration": 120.0,
+    "seed": 1,
+    "speed": 2.0,
+    "dose_budget": 2.0,
+    "radiation_weight": 1.0,
+    "gui": false,
+    "require_return": true
+  },
+  "runtime_source_sha256": "f1614cf3b95a3426142b6c8b7eaeb7255d7fa9a8b9e23d43462af895c1a9ce2b",
+  "image_id": "sha256:d48769fff412483214796847d4c46fd3e5bbaae19fdcef8de1cca7328c59de5b",
+  "git_commit": "4a41bad73c253a536d21497fe651edbf7407e1ad",
+  "git_dirty": true,
+  "created_utc": "20261007T152519_192061Z",
+  "source_note": "new simulation reference; historical hardware code was not in source repository"
+}

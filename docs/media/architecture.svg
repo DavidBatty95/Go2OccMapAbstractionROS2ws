@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="330" viewBox="0 0 1200 330" role="img" aria-labelledby="title desc">
+ <title id="title">Go2 occupancy exploration architecture</title><desc id="desc">MuJoCo Go2 publishes pose, scan and detector observations. The mapper publishes occupancy. The explorer builds a sparse graph, estimates radiation and commands velocity. A separate subscriber checks interfaces; hidden geometry and true exposure are used only for evaluation.</desc>
+ <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="#68ddd0"/></marker></defs>
+ <rect width="1200" height="330" rx="16" fill="#0b1724"/>
+ <g font-family="DejaVu Sans,Arial,sans-serif">
+  <text x="30" y="40" fill="#68ddd0" font-size="22">A CLOSED LOOP OVER REAL ROS 2 MESSAGES</text>
+  <g fill="#153143" stroke="#37596d"><rect x="30" y="78" width="340" height="135" rx="12"/><rect x="430" y="78" width="300" height="135" rx="12"/><rect x="790" y="78" width="380" height="135" rx="12"/></g>
+  <g fill="#eff7ff" font-size="22"><text x="50" y="115">MuJoCo Go2</text><text x="450" y="115">Observed mapper</text><text x="810" y="115">Graph explorer</text></g>
+  <g fill="#abc5d8" font-size="17"><text x="50" y="152">12 joints / 200 Hz torque physics</text><text x="50" y="184">Ideal pose + rays + noisy counts</text><text x="450" y="152">Timestamp-matched scans</text><text x="450" y="184">Unknown / free / occupied</text><text x="810" y="152">Sparse free-space graph + sampled GP</text><text x="810" y="184">Route costs + dose/time return reserve</text></g>
+  <g fill="none" stroke="#68ddd0" stroke-width="2" marker-end="url(#arrow)"><path d="M370 144H420"/><path d="M730 144H780"/><path d="M980 213V252H200V223"/></g>
+  <rect x="417" y="237" width="363" height="28" fill="#0b1724"/><text x="432" y="257" fill="#68ddd0" font-size="17">/cmd_vel → watchdog → walking policy</text>
+  <text x="30" y="309" fill="#ffbf79" font-size="16">Independent DDS monitor + retained traces + actual-exposure scoring. Pose is simulator truth; this is not sensor-only localization.</text>
+ </g>
+</svg>

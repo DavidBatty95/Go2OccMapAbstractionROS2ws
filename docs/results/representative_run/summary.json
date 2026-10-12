@@ -1,0 +1,94 @@
+{
+  "outcome": "PASS",
+  "checks": {
+    "launch_exited_cleanly": true,
+    "physics_healthy": true,
+    "live_ros_interfaces": true,
+    "physical_movement": true,
+    "real_command_flow": true,
+    "observed_map": true,
+    "graph_built": true,
+    "radiation_received": true,
+    "no_obstacle_contacts": true,
+    "within_actual_budget": true,
+    "returned_home": true
+  },
+  "returned_home": true,
+  "observed_free_fraction": 0.7846323326907189,
+  "initial_observed_free_fraction": 0.4146240705039934,
+  "observed_free_area_m2": 56.980000000000004,
+  "simulation": {
+    "world": "partitioned",
+    "simulation_time_s": 93.64999999998732,
+    "wall_time_s": 46.8335572060023,
+    "reason": "returned",
+    "error": null,
+    "actual_dose_usv": 0.28275027707102607,
+    "measured_dose_usv": 0.27854000000000007,
+    "obstacle_contact_steps": 0,
+    "scan_stop_steps": 0,
+    "minimum_upright": 0.9952736166589146,
+    "command_messages": 936,
+    "path_length_m": 13.38944718445407,
+    "final_position": [
+      -1.9046895420795216,
+      0.2439720702715272,
+      0.30359440361415924
+    ],
+    "seed": 1,
+    "odometry": "MuJoCo ground truth",
+    "scan": "ideal horizontal raycast",
+    "physics_hz": 200,
+    "policy_hz": 50
+  },
+  "mapping": {
+    "scan_updates": 935,
+    "unmatched_scans": 0,
+    "observed_free_cells": 5709,
+    "occupied_cells": 326
+  },
+  "exploration": {
+    "state": "returned",
+    "radiation_samples": 187,
+    "command_publications": 936,
+    "max_graph_nodes": 205,
+    "max_graph_edges": 660,
+    "dose_budget_usv": 2.0,
+    "radiation_weight": 1.0,
+    "measured_dose_usv": 0.27854000000000007,
+    "planning_p95_ms": 39.70973434043116,
+    "final_home_distance_m": 0.26268049327146403
+  },
+  "interfaces": {
+    "messages": {
+      "/clock": 4682,
+      "/odom": 4682,
+      "/scan": 936,
+      "/imu": 4682,
+      "/joint_states": 4682,
+      "/cmd_vel": 936,
+      "/map": 934,
+      "/plan": 94,
+      "/abstraction/graph": 94,
+      "/radiation/measurement": 187,
+      "/mission/status": 94,
+      "/tf": 4682
+    },
+    "invalid": {
+      "/clock": 0,
+      "/odom": 0,
+      "/scan": 0,
+      "/imu": 0,
+      "/joint_states": 0,
+      "/cmd_vel": 0,
+      "/map": 0,
+      "/plan": 0,
+      "/abstraction/graph": 0,
+      "/radiation/measurement": 0,
+      "/mission/status": 0,
+      "/tf": 0
+    }
+  },
+  "runtime_source_sha256": "f1614cf3b95a3426142b6c8b7eaeb7255d7fa9a8b9e23d43462af895c1a9ce2b",
+  "image_id": "sha256:d48769fff412483214796847d4c46fd3e5bbaae19fdcef8de1cca7328c59de5b"
+}

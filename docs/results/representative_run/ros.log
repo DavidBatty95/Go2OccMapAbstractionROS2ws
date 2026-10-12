@@ -1,0 +1,17 @@
+ Container go2-occmap-20261007t152519-192061z Creating 
+ Container go2-occmap-20261007t152519-192061z Created 
+[INFO] [launch]: All log files can be found below /tmp/.ros/log/2026-10-07-15-25-19-901108-david-1
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [monitor-1]: process started with pid [22]
+[INFO] [mapper-2]: process started with pid [24]
+[INFO] [explorer-3]: process started with pid [26]
+[INFO] [simulator-4]: process started with pid [28]
+[simulator-4] [INFO] [1791386721.978910253] [go2_simulator]: Go2 ready: physical joints, ideal odometry/rays; planner receives measurements only
+[simulator-4] [INFO] [1791386768.812657683] [go2_simulator]: {"world": "partitioned", "simulation_time_s": 93.64999999998732, "wall_time_s": 46.8335572060023, "reason": "returned", "error": null, "actual_dose_usv": 0.28275027707102607, "measured_dose_usv": 0.27854000000000007, "obstacle_contact_steps": 0, "scan_stop_steps": 0, "minimum_upright": 0.9952736166589146, "command_messages": 936, "path_length_m": 13.38944718445407, "final_position": [-1.9046895420795216, 0.2439720702715272, 0.30359440361415924], "seed": 1, "odometry": "MuJoCo ground truth", "scan": "ideal horizontal raycast", "physics_hz": 200, "policy_hz": 50}
+[INFO] [simulator-4]: process has finished cleanly [pid 28]
+[INFO] [explorer-3]: sending signal 'SIGINT' to process[explorer-3]
+[INFO] [mapper-2]: sending signal 'SIGINT' to process[mapper-2]
+[INFO] [monitor-1]: sending signal 'SIGINT' to process[monitor-1]
+[INFO] [monitor-1]: process has finished cleanly [pid 22]
+[INFO] [mapper-2]: process has finished cleanly [pid 24]
+[INFO] [explorer-3]: process has finished cleanly [pid 26]

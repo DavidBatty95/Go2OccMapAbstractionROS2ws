@@ -1,0 +1,29 @@
+name: go2-occmap
+services:
+  go2-sim:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    image: go2-occmap:humble
+    user: "${GO2_UID:-1000}:${GO2_GID:-1000}"
+    network_mode: host
+    environment:
+      HOME: /tmp
+      PYTHONDONTWRITEBYTECODE: '1'
+      OMP_NUM_THREADS: '1'
+      OPENBLAS_NUM_THREADS: '1'
+      MPLCONFIGDIR: /tmp/matplotlib
+      GO2_ASSET_DIR: /workspace/.cache/go2
+      ROS_DOMAIN_ID: ${GO2_ROS_DOMAIN_ID:-47}
+      RMW_IMPLEMENTATION: rmw_cyclonedds_cpp
+      CYCLONEDDS_URI: file:///workspace/config/cyclonedds.xml
+      DISPLAY: ${DISPLAY:-}
+      XAUTHORITY: /tmp/go2.xauthority
+      QT_X11_NO_MITSHM: '1'
+    volumes:
+      - .:/workspace
+      - /tmp/.X11-unix:/tmp/.X11-unix:ro
+      - ${XAUTHORITY:-/dev/null}:/tmp/go2.xauthority:ro
+    working_dir: /workspace
+    stdin_open: true
+    tty: true

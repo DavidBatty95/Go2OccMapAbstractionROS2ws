@@ -1,0 +1,24 @@
+{
+  "world": "partitioned",
+  "simulation_time_s": 93.64999999998732,
+  "wall_time_s": 46.8335572060023,
+  "reason": "returned",
+  "error": null,
+  "actual_dose_usv": 0.28275027707102607,
+  "measured_dose_usv": 0.27854000000000007,
+  "obstacle_contact_steps": 0,
+  "scan_stop_steps": 0,
+  "minimum_upright": 0.9952736166589146,
+  "command_messages": 936,
+  "path_length_m": 13.38944718445407,
+  "final_position": [
+    -1.9046895420795216,
+    0.2439720702715272,
+    0.30359440361415924
+  ],
+  "seed": 1,
+  "odometry": "MuJoCo ground truth",
+  "scan": "ideal horizontal raycast",
+  "physics_hz": 200,
+  "policy_hz": 50
+}

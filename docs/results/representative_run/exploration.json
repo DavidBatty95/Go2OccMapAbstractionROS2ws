@@ -1,0 +1,12 @@
+{
+  "state": "returned",
+  "radiation_samples": 187,
+  "command_publications": 936,
+  "max_graph_nodes": 205,
+  "max_graph_edges": 660,
+  "dose_budget_usv": 2.0,
+  "radiation_weight": 1.0,
+  "measured_dose_usv": 0.27854000000000007,
+  "planning_p95_ms": 39.70973434043116,
+  "final_home_distance_m": 0.26268049327146403
+}

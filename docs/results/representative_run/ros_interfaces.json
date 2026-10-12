@@ -1,0 +1,30 @@
+{
+  "messages": {
+    "/clock": 4682,
+    "/odom": 4682,
+    "/scan": 936,
+    "/imu": 4682,
+    "/joint_states": 4682,
+    "/cmd_vel": 936,
+    "/map": 934,
+    "/plan": 94,
+    "/abstraction/graph": 94,
+    "/radiation/measurement": 187,
+    "/mission/status": 94,
+    "/tf": 4682
+  },
+  "invalid": {
+    "/clock": 0,
+    "/odom": 0,
+    "/scan": 0,
+    "/imu": 0,
+    "/joint_states": 0,
+    "/cmd_vel": 0,
+    "/map": 0,
+    "/plan": 0,
+    "/abstraction/graph": 0,
+    "/radiation/measurement": 0,
+    "/mission/status": 0,
+    "/tf": 0
+  }
+}
